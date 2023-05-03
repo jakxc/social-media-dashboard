@@ -32,6 +32,8 @@
     --toggle: var(--toggle-light);
     --toggle-bg: var(--toggle-bg-light);
     --toggle-button: var(--toggle-button-light);
+    --attribution-dark: hsl(85, 85%, 69%);
+    --attribution-light: hsl(32, 96%, 44%);
   }
   
   @media (prefers-color-scheme: dark) {
@@ -48,6 +50,7 @@
         var(--toggle-bg-start) 98.02%
       );
       --toggle-button: var(--dark-bg);
+      --attribution: var(--attribution-dark)
     }
   }
   
@@ -60,6 +63,7 @@
     --toggle: var(--toggle-light);
     --toggle-bg: var(--toggle-bg-light);
     --toggle-button: var(--toggle-button-light);
+    --attribution: var(--attribution-light)
   }
   
   body.dark {
@@ -75,4 +79,5 @@
       var(--toggle-bg-start) 98.02%
     );
     --toggle-button: var(--dark-bg);
+    --attribution: var(--attribution-dark)
   }

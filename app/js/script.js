@@ -13,22 +13,22 @@ const colorModeFromPreferences = () => {
                 : 'light' // If preference is set or does not match anything (light is default)
 };
 
-const setMode = (mode) => {
+const setColorMode = (mode) => {
     localStorage.setItem('colorMode', mode);
     bodyEl.classList = mode;
     
     if (mode === 'dark') {
-        darkButton.clicked()
+        darkButton.click()
     } else {
-        lightButton.clicked();
+        lightButton.click();
     }
 }
 
 const toggle = (e) => {
     if (darkButton.checked) {
-        setMode('dark');
+        setColorMode('dark');
     } else {
-        setMode('light');
+        setColorMode('light');
     }
 }
 
@@ -43,4 +43,4 @@ for (let i=0; i < radioButtons.length; i++) {
     radioButtons[i].addEventListener('click', toggle)
 }
 
-setMode(colorModeFromLocalStorage() || colorModeFromPreferences());
+setColorMode(colorModeFromLocalStorage() || colorModeFromPreferences());
