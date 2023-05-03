@@ -14,13 +14,11 @@
 		margin-bottom: 0;
 	}
 
-	.card__count,
-	.card__change {
+	.card__count, .card__change {
 		align-self: end;
 	}
 
-	img,
-	.card__change {
+	img, .card__change {
 		justify-self: end;
 	}
 }

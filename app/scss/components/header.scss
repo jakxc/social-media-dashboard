@@ -2,10 +2,13 @@
 
 .header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: rem(36);
+  gap: 10px;
 
   @include breakpoint(medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
@@ -22,5 +25,8 @@
     font-size: rem(14);
     font-weight: 700;
     color: var(--text-color2);
+  }
+
+  &__toggle {
   }
 }
